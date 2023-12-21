@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CHATRA INTERNATIONAL HIGH SCHOOL</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/logo2.png" rel="icon">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Awal Navbar -->
+    <div class="navbar">
+        <div class="navbar-header">
+            <div class="logo">
+                <img src="img/logo1.png" alt="Logo Sekolah XYZ">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#extra">Extracurricular</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <!-- Akhir Navbar -->
+
+    <!-- Body -->
+    <div class="content">
+        <!-- Awal bagian home -->
+        <div id="home" class="home">
+            <div class="welcome" id="welcome">
+                <h1 id="welcome-heading">Hi, Welcome to Website</h1>
+                <p>CHATRA International High School.</p>
+
+                <!-- Formulir input nama -->
+                <form id="nameForm">
+                    <label for="name">Enter a name:</label>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" required>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Akhir bagian home -->
+
+        <!-- Awal bagian profile -->
+        <div id="profile" class="profile">
+            <h2>Our Profile</h2>
+            <div class="school-info">
+                <img src="img/bg2.jpg" alt="Foto Sekolah">
+                <p>Our school is, proudly, an international educational institution committed to providing an innovative
+                    and inclusive learning environment. With a focus on academic development, interpersonal skills, and
+                    global leadership, we encourage students to reach their highest potential. Our international
+                    standards-based curriculum is designed to prepare students with a deep understanding of the modern
+                    world and globally relevant skills. Through modern facilities, experienced faculty, and diverse
+                    extracurricular programs, we are forming a generation of future leaders who are ready to compete in
+                    an ever-changing world. Our school is also active in establishing partnerships with educational
+                    institutions around the world, opening the door to cultural exchange, project collaboration, and
+                    cross-border learning experiences. With a holistic approach to education, we support students
+                    physical, mental and emotional development, creating an environment where each individual is valued
+                    and inspired to achieve excellence. Diversity is our strength, creating a learning atmosphere that
+                    prepares students to face global challenges with confidence and deep understanding. At this school,
+                    we not only produce students, but also form global leaders who are responsible and highly
+                    competitive.</p><br>
+            </div>
+            <p><strong>Vission:</strong> To be a leading international educational institution that inspires, forms
+                global leaders, and drives innovation through a holistic approach that emphasizes universal values.</p>
+
+            <p><strong>Mission:</strong> 1. Provide high-quality education that includes an international curriculum,
+                modern facilities and innovative learning methods to ensure every student reaches his or her maximum
+                potential. 2. Supporting student character development by emphasizing universal values such as a sense
+                of responsibility, cooperation, tolerance and concern for the global environment. 3. Promote innovation
+                in teaching and learning methods, and utilize the latest technology to prepare students to face the
+                demands of the digital era.</p>
+        </div>
+        <!-- Akhir bagian profile -->
+
+        <!-- Awal bagian extracurricular -->
+        <div id="extra" class="extra">
+            <h2>Extracurricular</h2>
+            <div class="activity-container">
+                <div class="activity-item">
+                    <img src="img/ex1.jpg" alt="Badminton Club">
+                    <p>Badminton Club</p>
+                </div>
+
+                <div class="activity-item">
+                    <img src="img/ex2.jpg" alt="Volleyball Club">
+                    <p>Volleyball Club</p>
+                </div>
+
+                <div class="activity-item">
+                    <img src="img/ex3.jpg" alt="Footbal Club">
+                    <p>Footbal Club</p>
+                </div>
+
+                <div class="activity-item">
+                    <img src="img/ex4.jpg" alt="Creative Design">
+                    <p>Creative Design</p>
+                </div>
+
+                <div class="activity-item">
+                    <img src="img/ex5.jpg" alt="Business Club">
+                    <p>Business Club</p>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir bagian extracurricular -->
+
+        <!-- Awal bagian contact -->
+        <div id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="form-container">
+                <form id="contactForm" onsubmit="submitForm(event)">
+                    <label for="contactName">Name:</label>
+                    <input type="text" id="contactName" name="contactName" required>
+
+                    <label for="contactBirthdate">Date of Brith:</label>
+                    <input type="date" id="contactBirthdate" name="contactBirthdate" required>
+
+                    <label for="contactBirthdate">Gender:</label>
+                    <div class="gender-container">
+                        <label>
+                            <input type="radio" id="male" name="contactGender" value="male" required>
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" id="female" name="contactGender" value="female" required>
+                            Female
+                        </label>
+                    </div>
+                    <label for="contactMessage">Message:</label>
+                    <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="contactFormResult" class="form-result"></div>
+            </div>
+        </div>
+        <!-- Akhir bagian contact -->
+    </div>
+    <!-- Akhir bagian body -->
+
+    <!-- Awal footer -->
+    <footer>
+        <p>&copy; 2023 CHATRA International High School.</p>
+    </footer>
+    <!-- Akhir footer -->
+
+    <script src="js/script.js"></script>
+
+</body>
