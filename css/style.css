@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Awal Bagian navbar */
+.navbar {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-toggle span {
+    height: 5px;
+    width: 30px;
+    background: #153158;
+    margin: 6px 0;
+    display: block;
+}
+
+.nav-items {
+    float: right;
+}
+
+.nav-items a {
+    color: #153158;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.nav-items a:hover {
+    color: white;
+    background-color: #153158;
+}
+/* Akhir Bagian navbar */
+
+.content {
+    padding: 0px;
+}
+
+.section {
+    margin-top: 0px;
+}
+
+/* Awal Bagian Welcome */
+.welcome {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 45vh;
+    filter: grayscale(70%);
+    transition: background-image 1s ease;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.welcome p {
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#nameForm {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #153158;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #153158;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: white;
+    color: #153158;
+}
+/* Akhir Bagian navbar */
+
+/* Awal Bagian profile */
+.profile {
+    margin-top: 30px;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.school-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile img {
+    width: 500px;
+    margin-left: 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.profile p {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    font-family: Cambria;
+    color: #3B3B3D;
+}
+
+.school-info p {
+    max-width: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    font-family: Cambria;
+    color: #3B3B3D;
+}
+/* Akhir Bagian profile */
+
+/* Awal Bagian extra */
+.extra {
+    margin-top: 50px;
+}
+
+.extra h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.activity-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.activity-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.activity-item img {
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    filter: grayscale(70%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.activity-item p{
+    margin-top: 0;
+    font-weight: 700;
+    font-family: Cambria;
+}
+/* Akhir Bagian extra */
+
+/* Awal Bagian contact */
+.contact {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.form-container form {
+    display: grid;
+    margin-left: 80px;
+    width: 100%;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-result {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/* Akhir Bagian contact */
+
+footer {
+    background-color: white;
+    color: #153158;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        top: 60px;
+        right: 0;
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+    .nav-items a {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #666;
+    }
+
+    .welcome {
+        padding: 20vh 10px; 
+        text-align: center; 
+    }
+
+    .welcome-content {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .welcome h1 {
+        font-size: 20px; 
+        margin: 0; 
+        white-space: nowrap; 
+    }
+
+    .welcome p {
+        margin-top: 0; 
+        white-space: nowrap; 
+    }
+
+    .profile img {
+        width: 80%; 
+        margin: 0; 
+    }
+
+    .school-info {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .profile p,
+    .school-info p {
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }
+
+    .contact .form-container {
+        margin-left: 0; 
+    }
+
+    .contact form {
+        width: 90%; 
+    }
+
+    .form-container,
+    .form-result {
+        width: 100%; 
+        margin-left: 10px; 
+    }
+}
